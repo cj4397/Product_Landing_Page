@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Product Landing Page</title>
+  <link href="css.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="logo.png" />
+  <script src="https://kit.fontawesome.com/2cea6ac537.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-bg">
+  <header id="header" class="position-fixed w-100 navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand disabled ps-3" href="#">
+        <img src="logo.png" alt="" id="header-img" />
+      </a>
+
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#nav-bar"
+        aria-controls="nav-bar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav id="nav-bar" class="navbar collapse navbar-collapse px-3">
+        <a class="navbar-brand disabled" href="#">
+          <img src="LoL_Logo_Flat_WHITE.png" height="40px" width="120px" alt="" /></a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#shop">Shop</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button id="cartb" type="button" class="btn btn-primary position-relative" data-bs-toggle="modal"
+      data-bs-target="#cart">
+      <i class="fa-solid fa-cart-shopping"></i>Cart
+      <span id="cart-content" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        0
+      </span>
+    </button>
+  </header>
+
+  <div class="modal fade" id="cart" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="cartLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="cartLabel">Cart Items</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="Mcartc" class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Purchase</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-bs-spy="scroll" data-bs-target="#nav-bar" tabindex="0" data-bs-root-margin="0px 0px -40%">
+    <main id="home" class="white">
+      <section class="row m-0">
+        <div class="col-md-5 d-flex align-items-center justify-content-center">
+          <div class="content text-center mt-5">
+            <img class="mx-auto" src="assets/star-icon.png" alt="" />
+            <h1>STAR GUARDIAN</h1>
+            <p class="text text-start">
+              Celebrate your fandom and love of everything Star Guardian with
+              official Riot Games Merchandise plushies, apparel, jewelry, and
+              more. From familiar Star Guardian faces to new, we’ll be
+              introducing merch from all corners of the cosmos and every Star
+              Guardian team to date
+            </p>
+            <a href="#about" class="btn btn-primary">Summary</a>
+          </div>
+        </div>
+        <div id="vidc" class="col-md-7 d-flex align-items-center justify-content-center m-0 p-0">
+          <video id="video" controls class="img-fluid p-5">
+            <source src="assets/video1.mp4" type="video/mp4" />
+
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <section id="about" class="white my-5 py-1 fs-5">
+      <div class="text-center">
+        <button class="btn btn-primary mx-auto mb-3 px-5" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapse" aria-expanded="false" aria-controls="collapse">
+          <p class="mx-auto my-auto p-3">ABOUT</p>
+        </button>
+      </div>
+      <section id="collapse" class="container collapse">
+        <div>
+          <video controls class="img-fluid" src="assets/video.mp4"></video>
+        </div>
+
+        <div class="row my-5">
+          <div class="d-flex col-md-6 align-items-center">
+            <p>
+              In the beginning, the First Star gave birth to the universe and
+              all life. To protect its creations and ensure the cycle of life
+              would continue for eternity, the First Star entrusted
+              individuals iron-willed and pure of heart with fragments of its
+              essence—starlight—as protectors of the universe, the Star
+              Guardians.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/0.jpg" class="img-fluid rounded-4" alt="" />
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-md-6">
+            <img src="assets/1st.webp" class="img-fluid rounded-4" alt="" />
+          </div>
+          <div class="my-auto col-md-6">
+            <p>
+              The first team we are aware of consisted of Ahri, Miss Fortune,
+              Xayah, Rakan, and Neeko. One which was destroyed in the fight
+              against an ancient enemy, Zoe, with Rakan and Xayah being turned
+              into her puppets and Neeko stranded and escaping their pursuit.
+            </p>
+            <p>
+              On the other side of the galaxy, Lux forms her own team, with
+              Jinx, Lulu, Janna, and Poppy. Like all shounen and shoujou
+              anime, their bond grows in the heat of battle, which they win
+              due to the power of love and friendship.
+            </p>
+          </div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-md-6 my-auto">
+            <p>
+              However, Ahri and Miss Fortune are hardened veterans of the
+              League of Legends Star Guardians universe and are not so easily
+              swayed into believing in destiny.
+            </p>
+            <p>
+              These two teams meet, with Ahri and Miss Fortune joining Syndra,
+              Ezreal, and Soraka in a new team, to fight back against the void
+              scourge. It is there that Lux manages to thaw the heart of Ahri,
+              who has stopped believing in destiny and perhaps even despises
+              the First Star.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/2nd.jpg" class="img-fluid rounded-4" alt="" />
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="shop" class="py-5">
+      <div class="text-center">
+        <button class="btn btn-primary mx-auto px-5" type="button" data-bs-toggle="collapse" data-bs-target="#mer"
+          aria-expanded="false" aria-controls="collapse">
+          <p class="mx-auto my-auto p-3">SHOP</p>
+        </button>
+      </div>
+
+      <div id="mer" class="container collapse">
+        <div class="container px-4 px-lg-5 mt-5">
+          <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div id="poster1" class="col white mb-5"></div>
+            <div class="modal fade" id="Pmodal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="item1" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="item1"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="content1" class="modal-body container">
+                    <div id="imgcone">
+                      <div id="car1" class="carousel slide carousel-dark" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#car1" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#car1" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#car1" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#car1" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#car1" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img id="one1" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>Price</h5>
+                              <p>
+                                POSTER SIZE
+                                <br />
+                                FRAMED OR NOT
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="one2" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$22.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="one3" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$55.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="one4" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$28.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="one5" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$110.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="condone"></div>
+                  </div>
+                  <div id="submit1" class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="poster2" class="white col mb-5"></div>
+            <div class="modal fade" id="Pmodal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="item2" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="item2"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="content2" class="modal-body container">
+                    <div id="imgctwo">
+                      <div id="car2" class="carousel slide carousel-dark" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#car2" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#car2" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#car2" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#car2" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#car2" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img id="two1" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>Price</h5>
+                              <p>
+                                POSTER SIZE
+                                <br />
+                                FRAMED OR NOT
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="two2" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$22.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="two3" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$55.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="two4" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$28.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="two5" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$110.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="condtwo"></div>
+                  </div>
+                  <div id="submit2" class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="poster3" class="col white mb-5"></div>
+            <div class="modal fade" id="Pmodal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="item3" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="item3"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="content3" class="modal-body container">
+                    <div id="imgcthree">
+                      <div id="car3" class="carousel slide carousel-dark" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#car3" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#car3" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#car3" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#car3" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#car3" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img id="three1" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>Price</h5>
+                              <p>
+                                POSTER SIZE
+                                <br />
+                                FRAMED OR NOT
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="three2" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$22.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="three3" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$55.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="three4" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$28.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="three5" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$110.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car3" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car3" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="condthree"></div>
+                  </div>
+                  <div id="submit3" class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="poster4" class="col white mb-5"></div>
+            <div class="modal fade" id="Pmodal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="item4" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="item4"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="content4" class="modal-body container">
+                    <div id="imgcfour">
+                      <div id="car4" class="carousel slide carousel-dark" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#car4" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#car4" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#car4" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#car4" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#car4" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img id="four1" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>Price</h5>
+                              <p>
+                                POSTER SIZE
+                                <br />
+                                FRAMED OR NOT
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="four2" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$22.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="four3" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$55.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="four4" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$28.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="four5" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$110.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car4" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car4" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="condfour"></div>
+                  </div>
+                  <div id="submit4" class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="poster5" class="col white mb-5"></div>
+            <div class="modal fade" id="Pmodal5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="item5" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="item5"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="content5" class="modal-body container">
+                    <div id="imgcfive">
+                      <div id="car5" class="carousel slide carousel-dark" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#car5" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#car5" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#car5" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#car5" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#car5" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img id="five1" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>Price</h5>
+                              <p>
+                                POSTER SIZE
+                                <br />
+                                FRAMED OR NOT
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="five2" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$22.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="five3" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$55.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="five4" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$28.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="five5" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$110.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car5" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car5" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="condfive"></div>
+                  </div>
+                  <div id="submit5" class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="poster6" class="col white mb-5"></div>
+            <div class="modal fade" id="Pmodal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="item6" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="item6"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="content6" class="modal-body container">
+                    <div id="imgcsix">
+                      <div id="car6" class="carousel slide carousel-dark" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#car6" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#car6" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#car6" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#car6" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#car6" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img id="six1" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>Price</h5>
+                              <p>
+                                POSTER SIZE
+                                <br />
+                                FRAMED OR NOT
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="six2" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$22.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="six3" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$55.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="six4" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$28.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="six5" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$110.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car6" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car6" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="condsix"></div>
+                  </div>
+                  <div id="submit6" class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="poster7" class="col white mb-5"></div>
+            <div class="modal fade" id="Pmodal7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="item7" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="item7"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="content7" class="modal-body container">
+                    <div id="imgcseven">
+                      <div id="car7" class="carousel slide carousel-dark" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#car7" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#car7" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#car7" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#car7" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#car7" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img id="seven1" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>Price</h5>
+                              <p>
+                                POSTER SIZE
+                                <br />
+                                FRAMED OR NOT
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="seven2" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$22.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="seven3" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$55.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="seven4" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$28.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="seven5" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$110.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car7" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car7" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="condseven"></div>
+                  </div>
+                  <div id="submit7" class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="poster8" class="col white mb-5"></div>
+            <div class="modal fade" id="Pmodal8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="item8" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="item8"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="content8" class="modal-body container">
+                    <div id="imgceight">
+                      <div id="car8" class="carousel slide carousel-dark" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#car8" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#car8" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#car8" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#car8" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#car8" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img id="eight1" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>Price</h5>
+                              <p>
+                                POSTER SIZE
+                                <br />
+                                FRAMED OR NOT
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="eight2" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$22.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="eight3" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$55.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="eight4" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$28.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="eight5" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$110.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car8" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car8" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="condeight"></div>
+                  </div>
+                  <div id="submit8" class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="poster9" class="col white mb-5"></div>
+            <div class="modal fade" id="Pmodal9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="item9" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="item9"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="content9" class="modal-body container">
+                    <div id="imgcnine">
+                      <div id="car9" class="carousel slide carousel-dark" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#car9" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#car9" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#car9" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#car9" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#car9" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img id="nine1" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>Price</h5>
+                              <p>
+                                POSTER SIZE
+                                <br />
+                                FRAMED OR NOT
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="nine2" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$22.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="nine3" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$55.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="nine4" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$28.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="nine5" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$110.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car9" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car9" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="condnine"></div>
+                  </div>
+                  <div id="submit9" class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="poster10" class="col white mb-5"></div>
+            <div class="modal fade" id="Pmodal10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="item10" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="item10"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div id="content10" class="modal-body container">
+                    <div id="imgcten">
+                      <div id="car10" class="carousel slide carousel-dark" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#car10" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#car10" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#car10" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#car10" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#car10" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img id="ten1" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>Price</h5>
+                              <p>
+                                POSTER SIZE
+                                <br />
+                                FRAMED OR NOT
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="ten2" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$22.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="ten3" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption text-primary d-none d-md-block">
+                              <h5>$55.00</h5>
+                              <p>
+                                Small: 12 x 18 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="ten4" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$28.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Not Framed
+                              </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img id="ten5" src="" class="d-block w-100" alt="..." />
+                            <div class="carousel-caption bg-light text-primary d-none d-md-block">
+                              <h5>$110.00</h5>
+                              <p>
+                                Big: 24 x 36 inches
+                                <br />
+                                Framed
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#car10"
+                          data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#car10"
+                          data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="condten"></div>
+                  </div>
+                  <div id="submit10" class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="poster11" class="col white mb-5"></div>
+
+            <div id="poster12" class="col white mb-5"></div>
+
+            <div id="poster13" class="col white mb-5"></div>
+
+            <div id="poster14" class="col white mb-5"></div>
+
+            <div id="poster15" class="col white mb-5"></div>
+
+            <div id="poster16" class="col white mb-5"></div>
+
+            <div id="poster17" class="col white mb-5"></div>
+
+            <div id="poster18" class="col white mb-5"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="border-gold" />
+
+    <section id="subcribe">
+      <!-- Button trigger modal -->
+
+      <div class="text-center pb-5">
+        <h4 class="text-gold">
+          Finish the form below for subscription and notification
+        </h4>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form">
+          Subscription
+        </button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="form" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content border-gold">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Subscription form
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <form action="Thank_you.html" class="row g-3 needs-validation container mx-auto px-3" novalidate>
+                  <div class="col-md-6">
+                    <label id="name-label" for="name" class="form-label h4">Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" class="form-control" id="name"
+                      required />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      You must enter your name.
+                    </div>
+                  </div>
+                  <div class="col-md-5 mx-auto">
+                    <label id="email-label" for="email" class="form-label h4">Email</label>
+                    <input type="email" name="email" placeholder="Enter your email" class="form-control" id="email"
+                      pattern="[(\w)(\W\S_)]+@[a-z0-9.-]+\.com" required />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Please enter your correct email.
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label id="number-label" for="phone" class="form-label h4">Phone No.</label>
+                    <input type="tel" name="phone" pattern="^\+?((09|639))+([0-9]{9})"
+                      placeholder="Enter your phone no." class="form-control" id="phone" minlength="11" maxlength="13"
+                      required />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Please enter your correct phone no.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mx-auto">
+                    <label for="number" class="form-label h4">Age</label>
+                    <input type="number" name="age" placeholder="Enter your age" class="form-control" id="number"
+                      min="1" max="100" required />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Please enter your correct age.
+                    </div>
+                  </div>
+
+                  <hr />
+
+                  <label for="attribute" class="form-check-label h4">
+                    Are you a League of Legends Player?
+                  </label>
+
+                  <label class="form-check-label" for="yes">
+                    <input class="form-check-input" type="radio" name="attribute" value="yes" id="yes" required />
+                    Yes
+
+                    <div class="invalid-feedback">Please select one</div>
+                  </label>
+                  <label class="form-check-label" for="no">
+                    <input class="form-check-input" type="radio" name="attribute" value="no" id="no" required />
+                    No
+                    <div class="invalid-feedback">Please select one</div>
+                  </label>
+                  <label class="form-check-label" for="maybe">
+                    <input class="form-check-input" type="radio" name="attribute" value="maybe" id="maybe" required />
+                    Maybe
+                    <div class="invalid-feedback">Please select one</div>
+                  </label>
+                  <div class="valid-feedback">Looks good!</div>
+                  <hr />
+
+                  <div class="form-floating">
+                    <textarea name="message" id="message" placeholder="Type here..." class="form-control"
+                      style="height: 30vh"></textarea>
+                    <label for="message">Any comments or suggestions</label>
+                  </div>
+
+                  <hr />
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+                      <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="btn btn-primary m-5 px-5" id="submit" type="submit">
+                      Submit form
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        (() => {
+          "use strict";
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll(".needs-validation");
+
+          // Loop over them and prevent submission
+          Array.from(forms).forEach((form) => {
+            form.addEventListener(
+              "submit",
+              (event) => {
+                if (!form.checkValidity()) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+
+                form.classList.add("was-validated");
+              },
+              false
+            );
+          });
+        })();
+      </script>
+    </section>
+  </div>
+  <script src="routes.js"></script>
+
+  <script src="/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

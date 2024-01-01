@@ -1,0 +1,121 @@
+
+@use 'scss/bootstrap.scss';
+@font-face {
+  font-family: Friz Quadrata;
+  src: url("Friz Quadrata Regular.ttf");
+}
+
+
+
+html {
+
+  cursor: url('assets/mouse@0.3x.png'), default !important;
+}
+
+
+button, a, input, label{
+  cursor: url('assets/mouse-active@0.4x.png'), default !important;
+
+}
+
+* {
+  font-family: Friz Quadrata;
+
+  user-select: none;
+
+
+}
+
+.white{
+  color: #e6e6e6;
+  font-weight: normal
+}
+
+  // color:whitesmoke;
+
+.border-gold{
+  border-width: 3px;
+  border-color: #C89B3C;
+  // border-image: linear-gradient(#785A28, #C89B3C);
+}
+
+.bg-magic{
+  color: whitesmoke;
+  background-image: linear-gradient(#005A82, #0AC8B9);
+ transition: 3s;
+}
+
+.bg-magic:hover{
+  transition: 1s;
+  color: black;
+  background-image: linear-gradient( #0AC8B9,#005A82);
+}
+
+
+header{
+    position: absolute;
+    z-index: 99;
+    background: transparent;
+    transition: 2s;
+
+}
+header:hover{
+  transition: 1s;
+  background-color:#785A28 ;
+}
+
+
+#header-img{
+    height: 50px;
+    width: 50px;
+  
+}
+
+.bg-bg{
+  background-image: linear-gradient(#091428, #0A1428);
+}
+
+// .text-gold{
+// color: #b38a32;
+// }
+
+h1,h2,h3,h4,h5{
+  color: #b38a32;
+}
+
+#cartb{
+  margin-right: 50px;
+  width: 100px;
+}
+
+#video {
+  
+  border-radius: 75px;
+ 
+  }
+  
+ .text{
+  text-align: justify;
+  text-justify: auto;
+  text-indent: 50px;
+  font-size: 1.25rem;
+  
+ }
+  .content {
+   width: 100%;
+  }
+
+
+
+
+  @media (min-width: 768px) { 
+   
+    .content {
+      width: 75%;
+     }
+     main > section{
+ 
+      width: 98vw;
+    height: 100vh;
+    }
+   }
